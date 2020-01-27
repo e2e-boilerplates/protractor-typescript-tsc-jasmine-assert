@@ -1,0 +1,35 @@
+name: protractor-typescript-tsc-jasmine-expect
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 1-31/2 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: INSTALL
+      run: |
+        npm ci
+      env:
+        CI: true
+    - name: LINT
+      run: |
+        npm run lint
+    - name: UPDATE WEBDRIVER
+      run: |
+        npm run upadte-webderiver
+    - name: BUILD
+      run: |
+        npm run build
+    - name: TEST
+      run: |
+        npm run test-ci
