@@ -1,4 +1,4 @@
-name: protractor-typescript-tsc-jasmine-expect
+name: protractor-typescript-tsc-jasmine-assert
 
 on:
   push:
