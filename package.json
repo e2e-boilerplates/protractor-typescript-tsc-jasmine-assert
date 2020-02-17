@@ -6,19 +6,21 @@
     "pretty": "npx prettier --no-config './spec/*.ts' --write",
     "lint": "npx tslint -c tslint.json './spec/*.ts'",
     "clean": "npx rimraf ./build/*",
-    "upadte-webderiver": "npx webdriver-manager update --standalone false --gecko",
+    "upadte-webderiver": "npx webdriver-manager update",
+    "upadte-webderiver-ci": "npx webdriver-manager update --versions.chrome=79.0.3945.36",
     "build": "npx tsc",
-    "test": "npx protractor ./build/protractor.conf.js",
-    "test-ci": "npx protractor ./build/protractor-ci.conf.js "
+    "test": "npx protractor ./build/protractor.conf.js"
   },
   "keywords": [
     "protractor",
-    "es6 modules",
+    "es6",
     "typescript",
     "jasmine",
     "boilerplate",
     "example",
-    "expect"
+    "expect",
+    "e2e",
+    "e2e test"
   ],
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
   "license": "MIT",
@@ -31,7 +33,6 @@
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "protractor": "5.4.3",
-    "puppeteer": "2.1.1",
     "rimraf": "3.0.2",
     "tslint": "5.20.1",
     "tslint-config-prettier": "1.18.0",

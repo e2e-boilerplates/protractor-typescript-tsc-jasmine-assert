@@ -1,13 +1,27 @@
 import { Config } from "protractor";
-export let config: Config = {
+
+const directConnect = true;
+const specs = ["spec/*.spec.js"];
+
+const headed = {
   capabilities: {
     browserName: "chrome"
   },
-  directConnect: true,
-  framework: "jasmine",
-  jasmineNodeOpts: {
-    isVerbose: true,
-    realtimeFailure: true
-  },
-  specs: ["spec/*.spec.js"]
+  directConnect,
+  specs
 };
+
+const headless = {
+  capabilities: {
+    browserName: "chrome",
+    chromeOptions: {
+      args: ["--headless", "--no-sandbox", "--disable-gpu"]
+    }
+  },
+  directConnect,
+  specs
+};
+
+const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;
+
+export { config };

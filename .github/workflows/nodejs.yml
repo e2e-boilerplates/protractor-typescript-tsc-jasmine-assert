@@ -26,10 +26,10 @@ jobs:
         npm run lint
     - name: UPDATE WEBDRIVER
       run: |
-        npm run upadte-webderiver
+        npm run upadte-webderiver-ci
     - name: BUILD
       run: |
         npm run build
     - name: TEST
       run: |
-        npm run test-ci
+        npm run test
