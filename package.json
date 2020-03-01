@@ -1,33 +1,11 @@
 {
-  "name": "protractor-typescript-tsc-jasmine-assert",
-  "version": "1.0.0",
-  "description": "Protractor end-to-end test automation boilerplate, using TypeScript, tsc, Jasmine, and Assert",
-  "scripts": {
-    "pretty": "npx prettier --no-config './spec/*.ts' --write",
-    "lint": "npx tslint -c tslint.json './spec/*.ts'",
-    "clean": "npx rimraf ./build/*",
-    "upadte-webderiver": "npx webdriver-manager update",
-    "upadte-webderiver-ci": "npx webdriver-manager update --versions.chrome=79.0.3945.36",
-    "build": "npx tsc",
-    "test": "npx protractor ./build/protractor.conf.js"
-  },
-  "keywords": [
-    "protractor",
-    "es6",
-    "typescript",
-    "jasmine",
-    "boilerplate",
-    "example",
-    "expect",
-    "e2e",
-    "e2e test"
-  ],
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
-  "license": "MIT",
+  "description": "Protractor end-to-end test automation boilerplate, using TypeScript, tsc, Jasmine, and Assert",
   "devDependencies": {
     "@types/jasmine": "3.5.7",
     "@types/jasminewd2": "2.0.8",
     "@types/node": "12.12.29",
+    "eslint-plugin-json": "^2.1.0",
     "husky": "4.2.3",
     "lint-staged": "10.0.8",
     "prettier": "1.19.1",
@@ -43,10 +21,38 @@
       "pre-commit": "lint-staged"
     }
   },
+  "keywords": [
+    "assert",
+    "boilerplate",
+    "e2e",
+    "e2e tests",
+    "example",
+    "integration test",
+    "jasmine",
+    "protractor",
+    "tsc",
+    "typescript"
+  ],
+  "license": "MIT",
   "lint-staged": {
     "*.{ts,js,css,json,md}": [
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "name": "protractor-typescript-tsc-jasmine-assert",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplates/protractor-typescript-tsc-jasmine-assert.git"
+  },
+  "scripts": {
+    "pretty": "npx prettier --no-config './spec/*.ts' --write",
+    "lint": "npx tslint -c tslint.json './spec/*.ts'",
+    "clean": "npx rimraf ./build/*",
+    "upadte-webderiver": "npx webdriver-manager update",
+    "upadte-webderiver-ci": "npx webdriver-manager update --versions.chrome=79.0.3945.36",
+    "build": "npx tsc",
+    "test": "npx protractor ./build/protractor.conf.js"
+  },
+  "version": "1.0.0"
 }
