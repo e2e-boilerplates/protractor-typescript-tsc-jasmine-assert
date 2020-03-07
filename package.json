@@ -40,13 +40,13 @@
     "url": "git+https://github.com/e2e-boilerplates/protractor-typescript-tsc-jasmine-assert.git"
   },
   "scripts": {
-    "pretty": "npx prettier --no-config './spec/*.ts' --write",
-    "lint": "npx tslint -c tslint.json './spec/*.ts'",
-    "clean": "npx rimraf ./build/*",
-    "upadte-webderiver": "npx webdriver-manager update",
-    "upadte-webderiver-ci": "npx webdriver-manager update --versions.chrome=79.0.3945.36",
     "build": "npx tsc",
-    "test": "npx protractor ./build/protractor.conf.js"
+    "clean": "npx rimraf ./build/*",
+    "lint": "npx tslint -c tslint.json './spec/*.ts'",
+    "pretty": "npx prettier --no-config './spec/*.ts' --write",
+    "test": "npx protractor ./build/protractor.conf.js",
+    "upadte-webderiver": "npx webdriver-manager update",
+    "upadte-webderiver-ci": "npx webdriver-manager update --versions.chrome=79.0.3945.36"
   },
   "version": "1.0.0"
 }
