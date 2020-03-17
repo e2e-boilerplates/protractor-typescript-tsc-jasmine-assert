@@ -1,4 +1,4 @@
-[![GitHub Actions status | e2e-boilerplate/protractor-typescript-tsc-jasmine-assert](https://github.com/e2e-boilerplate/protractor-typescript-tsc-jasmine-assert/workflows/protractor-typescript-tsc-jasmine-assert/badge.svg)](https://github.com/e2e-boilerplate/protractor-typescript-tsc-jasmine-assert/actions?workflow=protractor-typescript-tsc-jasmine-assert)
+[![GitHub Actions status | e2e-boilerplate/protractor-typescript-tsc-jasmine-assert](https://github.com/e2e-boilerplate/protractor-typescript-tsc-jasmine-assert/workflows/protractor-typescript-tsc-jasmine-assert/badge.svg)](https://github.com/e2e-boilerplate/protractor-typescript-tsc-jasmine-assert/actions?workflow=protractor-typescript-tsc-jasmine-assert) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Protractor Boilerplate
 
@@ -6,9 +6,14 @@ Protractor end-to-end test automation boilerplate, using TypeScript, Tsc, Jasmin
 
 ## Getting Started
 
-    	git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-jasmine-assert.git
-    	cd protractor-typescript-tsc-jasmine-assert
-    	npm install
-    	npm run build
-    	npm run update-webdriver
-    	npm run test
+1. git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-jasmine-assert.git
+
+2. cd protractor-typescript-tsc-jasmine-assert
+
+3. npm install
+
+4. npm run build
+
+5. npm run update-webdriver
+
+6. npm run test
