@@ -14,6 +14,6 @@ Protractor end-to-end test automation boilerplate, Using TypeScript, Tsc, Jasmin
 
 4. npm run build
 
-5. npm run update-webdriver
+5. npm run update:webdriver
 
 6. npm run test
