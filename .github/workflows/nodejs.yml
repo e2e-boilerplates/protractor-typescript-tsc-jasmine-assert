@@ -2,7 +2,7 @@ name: protractor-typescript-tsc-jasmine-assert
 'on':
   push: null
   schedule:
-    - cron: 50 7 2-31/2 * *
+    - cron: 30 7 2-31/2 * *
 jobs:
   build:
     runs-on: ubuntu-latest
