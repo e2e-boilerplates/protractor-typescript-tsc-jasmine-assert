@@ -1,7 +1,7 @@
 import { browser, Config } from "protractor";
       
 const directConnect = true;
-const specs = ["spec/*.spec.ts"];
+const specs = ["spec/*.spec.{js,ts}"];
 const framework = "jasmine";
 
 const mochaOpts = {};
