@@ -1,27 +1,40 @@
-import { Config } from "protractor";
-
+import { browser, Config } from "protractor";
+      
 const directConnect = true;
-const specs = ["spec/*.spec.js"];
+const specs = ["spec/*.spec.ts"];
+const framework = "jasmine";
+
+const mochaOpts = {};
+
+const onPrepare = () => {
+  browser.waitForAngularEnabled(false);
+};
 
 const headed = {
-  capabilities: {
-    browserName: "chrome"
-  },
   directConnect,
-  specs
+  specs,
+  capabilities: {
+    browserName: "chrome",
+  },
+  framework,
+  mochaOpts,
+  onPrepare
 };
 
 const headless = {
+  directConnect,
+  specs,
   capabilities: {
     browserName: "chrome",
-    chromeOptions: {
-      args: ["--headless", "--no-sandbox", "--disable-gpu"]
-    }
+      chromeOptions: {
+        args: ["--headless", "--no-sandbox", "--disable-gpu"],
+      },
   },
-  directConnect,
-  specs
+  framework,
+  mochaOpts,
+  onPrepare
 };
 
-const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;
-
+const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;  
+            
 export { config };
