@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "jasmine": "3.5.0",
-    "protractor": "5.4.3",
+    "protractor": "5.4.4",
     "rimraf": "3.0.2",
     "typescript": "3.8.3"
   },
