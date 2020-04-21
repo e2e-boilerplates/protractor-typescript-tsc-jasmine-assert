@@ -17,3 +17,6 @@ Protractor end-to-end test automation boilerplate, Using TypeScript, Tsc, Jasmin
 5. npm run update:webdriver
     
 6. npm run test
+    
+    
+For more boilerplate click [here](https://github.com/e2e-boilerplate/utils/blob/master/docs/implemented.md)
