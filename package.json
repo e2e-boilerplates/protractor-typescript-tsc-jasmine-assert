@@ -7,7 +7,7 @@
     "jasmine": "3.5.0",
     "protractor": "7.0.0",
     "rimraf": "3.0.2",
-    "typescript": "3.9.2"
+    "typescript": "3.9.3"
   },
   "description": "Protractor end-to-end test automation boilerplate. Using TypeScript, tsc, Jasmine and Assert.",
   "devDependencies": {
