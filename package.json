@@ -4,7 +4,7 @@
     "url": "https://github.com/e2e-boilerplate/protractor-typescript-tsc-jasmine-assert/issues"
   },
   "dependencies": {
-    "jasmine": "3.5.0",
+    "jasmine": "3.6.0",
     "protractor": "7.0.0",
     "rimraf": "3.0.2",
     "typescript": "3.9.7"
